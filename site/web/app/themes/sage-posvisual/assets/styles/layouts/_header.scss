@@ -1,0 +1,112 @@
+.banner {
+  .top-header {
+    background: rgba(0,0,0,.3);
+    height: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    .logo-bg {
+      background: #EC2727;
+      float: left;
+      padding: 10px 0 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100px;
+      z-index: 15;
+      &:before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -60px;
+        width: 1000px;
+        height: 100px;
+        background: #EC2727;
+        left: -950px;
+        top: 0px;
+        z-index: -1;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: -60px;
+        top: 0px;
+        border-left: 60px solid #EC2727;
+        border-bottom: 100px solid transparent;
+      }
+      .brand {
+        float: left;
+        width: 80%;
+        max-width: 200px;
+        max-height: 99px;
+        margin-left: 20px;
+        image-rendering: auto;
+      }
+    }
+
+    .contact {
+        float: right;
+        margin-top: 5px;
+        margin-right: 37px;
+        .phone {
+            float: left;
+            display: inline;
+            color: #fff;
+            font-weight: 700;
+            //font-size: 1.3em;
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        .social-media {
+            float: left;
+            > li {
+                float: left;
+                a {
+                    background: #fff;
+                    color: #222;
+                    cursor: pointer;
+                    float: left;
+                    margin-right: 2px;
+                    height: 27px;
+                    width: 27px;
+                    text-decoration: none;
+                    text-align: center;
+                    .fa {
+                      font-size: .8em;
+                      line-height: 1em;
+                      margin: 0px;
+                      padding: 7px
+                    }
+                    &:hover {
+                        background: #222;
+                        .fa {
+                          color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+
+  nav.navbar.navbar-dark.bg-inverse {
+      border-radius: 0;
+      position: relative;
+      z-index: 15;
+  }
+
+  #carousel-home-slider {
+    position: relative;
+    margin-top: -14em;
+    z-index: 1;
+  }
+
+}
+
+.banner .nav li {
+  @extend .nav-item;
+}
+.banner .nav a {
+  @extend .nav-link;
+}
