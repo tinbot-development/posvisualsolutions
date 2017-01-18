@@ -1,0 +1,70 @@
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+.search-form .search-field {
+  @extend .form-control;
+}
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+
+//Contact Page Gravity Form
+
+.online-enquiry_wrapper {
+    margin-top: 0;
+    form.online-enquiry {
+        background: #f4f4f4;
+        .gform_heading {
+            background: red;
+            color: white;
+            padding: .5em 1em;
+            > h3 {
+                color: white;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .gform_body {
+          padding: 0 0 0 1em;
+          .gform_label{
+            font-weight: 400;
+            font-size: 14px;
+          }
+        }
+        .gform_footer.left_label {
+            margin: 0;
+            width: 100%;
+            padding-left: 1em;
+            padding-right: 1em;;
+            .gform_button.button {
+              @extend .btn;
+              @extend .btn-primary;
+              width: 100%;
+              font-weight: 400;
+              font-size: 14px;
+            }
+        }
+
+      @include media-breakpoint-down(sm){
+        .gform_body {
+          padding: 0 1em;
+        }
+      }
+    }
+}
+
+
+/* Comment Form */
+
+.comment-form {
+  p.form-submit .submit {
+    border: 1px solid #eceeef;
+  }
+}

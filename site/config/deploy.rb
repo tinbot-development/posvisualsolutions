@@ -4,14 +4,14 @@ lock '3.4.1'
 set :stages, ["staging", "production"]
 set :default_stage, "production"
 
-set :application, 'tonermart'
-set :repo_url, 'git@github.com:tinbot-development/raslarr.git'
+set :application, 'POS'
+set :repo_url, 'git@github.com:tinbot-development/posvisualsolutions.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/var/www/raslarr.tinbotdevelopment.com'
+set :deploy_to, '/var/www/pos.tinbotdevelopment.com'
 set :keep_releases, 1
 
 namespace :deploy do

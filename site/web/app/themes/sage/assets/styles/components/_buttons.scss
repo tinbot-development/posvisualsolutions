@@ -1,0 +1,35 @@
+.btn {
+  display: inline-block;
+  margin: 0em;
+  padding: 0.75em 1em 0.75em;
+  position: relative;
+  border-radius: 0;
+  border:  2px solid #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.85em;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.75s ease;
+  box-sizing: border-box;
+  &:after {
+      content: "\f054";
+      font-family: fontAwesome;
+      margin-left: 5px;
+      font-weight: normal;
+  }
+  &.btn-default {
+      color: #222;
+      background-color: #fff;
+      border-color: #fff;
+      &:hover {
+        color: #fff;
+        background: none;
+        border: 2px solid #fff;
+      }
+  }
+}
+

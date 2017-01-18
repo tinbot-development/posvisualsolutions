@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9609ea5957b1aa2318c009467bcaf516",
-    "content-hash": "54b0755b5d9d43ccd4c4e36d8b0a2fb9",
+    "hash": "3aae5dd1e54d6e08e9a51668602b7d1d",
+    "content-hash": "8b4db6cb6f0a296d09bb4139ecc3bfa9",
     "packages": [
         {
             "name": "advanced-custom-fields/advanced-custom-fields-pro",
-            "version": "5.4.4",
+            "version": "5.4.8",
             "dist": {
                 "type": "zip",
                 "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU1Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTA3IDAyOjExOjA2",
@@ -374,15 +374,15 @@
         },
         {
             "name": "wpackagist-plugin/photo-gallery",
-            "version": "1.3.13",
+            "version": "1.3.14",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/photo-gallery/",
-                "reference": "tags/1.3.13"
+                "reference": "tags/1.3.14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/photo-gallery.1.3.13.zip",
+                "url": "https://downloads.wordpress.org/plugin/photo-gallery.1.3.14.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -391,6 +391,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/photo-gallery/"
+        },
+        {
+            "name": "wpackagist-plugin/regenerate-thumbnails",
+            "version": "2.2.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/regenerate-thumbnails/",
+                "reference": "tags/2.2.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/regenerate-thumbnails.2.2.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/regenerate-thumbnails/"
         },
         {
             "name": "wpackagist-plugin/smooth-scroll-up",

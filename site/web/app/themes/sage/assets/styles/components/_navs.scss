@@ -1,0 +1,107 @@
+nav {
+  ul#menu-main-navigation {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    li {
+      list-style: none;
+      float: left;
+      display: inline-block;
+      margin: 0 7px;
+      padding: 10px 0;
+        a {
+          display: inline-block;
+          text-decoration: none;
+          width: 100%;
+          text-transform: uppercase;
+          font-weight: 300;
+          padding: 3px 3px;
+          color: #fff;
+          box-sizing: border-box;
+          vertical-align: top;
+          font-size: 13px;
+          border: 1px solid rgba(255,255,255,0);
+          &:hover {
+            border: 1px solid rgba(255,255,255,1);
+            color: #fff;
+          }
+        }
+    &.current-menu-item {
+        > a {
+          border: 1px solid rgba(255,255,255,1);
+        }
+    }
+    }
+
+  }
+}
+
+footer.content-info {
+    .widget_nav_menu {
+        display: inline-block;
+        width: 60%;
+        ul.menu {
+            padding: 0;
+            margin: 0;
+            li {
+              float: left;
+              list-style: none;
+              a {
+                  color: white;
+                  font-size: $font-size-xs;
+                  padding: 5px 10px;
+                  display: block;
+                  &:hover {
+                      color: $brand-primary;
+                      text-decoration: none;
+                  }
+              }
+            }
+
+        }
+    }
+}
+
+
+/* Mobile Nav */
+
+/* Shift Nav Plugin */
+//Toggle
+#shiftnav-toggle-main {
+  background: #EC2727;
+  color: #eee;
+  height: 62px;
+  .img-fluid {
+      height: 33px;
+  }
+}
+//Menu
+.shiftnav{
+  nav.shiftnav-nav {
+      ul.shiftnav-menu li.menu-item {
+        .shiftnav-target {
+        }
+
+        &.current-menu-item,
+        &.current-menu-ancestor,
+        &.shiftnav-active,
+        &.shiftnav-in-transition {
+          > .shiftnav-target {
+            background-color: transparent;
+            border-top: 1px solid #313131;
+          }
+        }
+        > .shiftnav-target:hover,
+        > .shiftnav-target:active{
+          background-color: $brand-primary;
+          border-color: #8a0000;
+        }
+      }
+  }
+}

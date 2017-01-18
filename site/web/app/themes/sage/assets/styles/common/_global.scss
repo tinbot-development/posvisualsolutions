@@ -1,0 +1,42 @@
+ul.list-col-4 {
+  @extend .row;
+  >li {
+      @extend .col-md-3;
+  }
+}
+
+.text-bold {
+    font-weight: bold;
+    * {
+        font-weight: bold;
+    }
+}
+
+
+//Responsive Styles
+@include media-breakpoint-up(md) {
+  .wrap.container {
+      min-height: 567px;
+  }
+  .vertical-center-parent {
+    position: relative;
+  }
+  .vertical-center-child {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .vertical-center-child {
+      padding: 1em 0;
+  }
+}
+
+
+@include media-breakpoint-down(sm) {
+  aside.col-md-6 + .col-md-6 {
+      margin-top: 2em;
+  }
+}
